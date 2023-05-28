@@ -8,7 +8,7 @@
 * *Date Created*: 24 MAY 2023
 * *Last Modification Date*: 27 MAY 2023
 * *Git URL for Assignment 1 - Individual Portion*: <https://git.cs.dal.ca/preetha/csci5709_kachhadiya_preetha_assignments/-/tree/main/Assignment1>
-* *Deployment URL(Netlify)*: <>
+* *Deployment URL(Netlify)*: <https://main--shimmering-fox-e28196.netlify.app/>
 * *Selected Feature for Assignment 1*: Wishlist 
 
 ## Group and Project Details
@@ -44,7 +44,7 @@
 
 The assignment has been deployed using Netlify by following the instructions in the handout file for Netlify.
 
-Deployment URL: <>
+Deployment URL: <https://main--shimmering-fox-e28196.netlify.app/>
 
 ## Built Using following Technologies
 
