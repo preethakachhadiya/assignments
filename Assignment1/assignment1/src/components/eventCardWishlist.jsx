@@ -7,8 +7,8 @@ export default (props) => {
         props.removeEvent(event.id);
     };
     return (
-        <div class="col-md-3 my-3">
-          <div class="card" style={{width: "18rem"}}>
+        <div class="col-md-4 col-12 col-sm-6 col-lg-3 my-3 justify-content-between">
+          <div class="card mx-auto" style={{width: "18rem"}}>
             <img src={logo} class="card-img-top"/>
             <div class="card-body">
               <h5 class="card-title d-flex justify-content-center">{event.name}</h5>

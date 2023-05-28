@@ -162,42 +162,42 @@ function MyWishlist() {
 
     return (
         <div>
-            <div class="my-4 mx-4">
-      <div class="d-flex justify-content-between">
-        <div>
-          <h2>My Wishlist <i class="bi bi-bookmarks-fill"></i></h2>
-        </div>
-        <div class="d-flex">
-          <div class="input-group mx-3">
-            <input type="text" class="form-control" value={searchQuery} onChange={handleSearch} placeholder="Search Event"/>
-            <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="bi bi-search"></i></button>
-          </div>
-          <div class="dropdown mx-3">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Sort By
-            </button>
-            <ul class="dropdown-menu">
-              <li><span class="dropdown-item" onClick={handleDateSort}>Date</span></li>
-              <li><span class="dropdown-item" onClick={handleNameSort}>Name</span></li>
-            </ul>
-          </div>
-          <div class="dropdown mx-3">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Filter By
-            </button>
-            <ul class="dropdown-menu">
-              <li><span class="dropdown-item" onClick={handleFilterThisWeek}>This Week</span></li>
-              <li><span class="dropdown-item" onClick={handleFilterThisMonth}>This Month</span></li>
-              <li><span class="dropdown-item" onClick={() => {
-                setSearchResults(events);
-              }}>Show All</span></li>
-            </ul>
-          </div>
+          <div class="my-4 mx-2">
+            <div class="d-flex justify-content-between">
+              <div>
+                <h2>My Wishlist <i class="bi bi-bookmarks-fill"></i></h2>
+              </div>
+              <div class="d-flex">
+                <div class="input-group mx-3">
+                  <input type="text" class="form-control" value={searchQuery} onChange={handleSearch} placeholder="Search Event"/>
+                  <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="bi bi-search"></i></button>
+                </div>
+              <div class="dropdown mx-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Sort By
+                </button>
+                <ul class="dropdown-menu">
+                  <li><span class="dropdown-item" onClick={handleDateSort}>Date</span></li>
+                  <li><span class="dropdown-item" onClick={handleNameSort}>Name</span></li>
+                </ul>
+              </div>
+              <div class="dropdown mx-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Filter By
+                </button>
+                <ul class="dropdown-menu">
+                  <li><span class="dropdown-item" onClick={handleFilterThisWeek}>This Week</span></li>
+                  <li><span class="dropdown-item" onClick={handleFilterThisMonth}>This Month</span></li>
+                  <li><span class="dropdown-item" onClick={() => {
+                    setSearchResults(events);
+                  }}>Show All</span></li>
+                </ul>
+              </div>
         </div>
       </div>
     </div>
-    <div class="container d-flex">
-      <div class="row">
+    <div class="ms-3 d-flex justify-content-around">
+      <div class="row d-flex justify-content-center">
           {searchResults.map(event => (
             <EventCardWishlist key={event.id} event={event} removeEvent={removeEvent} /> 
         ))   
